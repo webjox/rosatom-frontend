@@ -1,0 +1,70 @@
+.search {
+    margin: 48px auto;
+    background: white;
+    padding: 48px 20px;
+}
+
+.container {
+    width: 725px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.inputControl {
+    margin-bottom: 12px;
+    display: flex;
+}
+
+.inputSearch {
+    position: relative;
+    width: 510px;
+
+}
+
+.inputSearch > input {
+    width: 510px;
+    padding: 10px 90px 10px 12px;
+    outline: 0;
+    border: 1px solid #D8DFEF;
+}
+
+.inputSearch > button {
+    background: #1B75C9;
+    padding: 8px 16px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    height: 38px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.btnFile {
+    margin-left: 24px;
+}
+
+.inputFile {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+
+.inputCheckbox {
+    margin: 0 10px 0 0;
+}
+
+.labelCheckbox {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
