@@ -3,10 +3,13 @@ import styles from './Home.module.css'
 import Search from "../../components/search/Search";
 import Header from "../../components/header/header";
 import ModalContact from "../../components/modalContact/ModalContact";
+import {NavLink} from 'react-router-dom'
+import ModalAnaliz from "../../components/modalAnaliz/ModalAnaliz";
 
 const Home = () => {
 
     const [active, setActive] = useState(false)
+    const [activeAnaliz, setActiveAnaliz] = useState(false)
     const [activeTable, setActiveTable] = useState(true)
 
 
@@ -21,15 +24,21 @@ const Home = () => {
     return (
         <div>
             <ModalContact active={active} setActive={setActive}/>
+            <ModalAnaliz active={activeAnaliz} setActive={setActiveAnaliz}/>
 
             <Header/>
             <div className={styles.container}>
                 <Search/>
-
                 <div>
                     <div>
-                        <button className={styles.btnTable} onClick={() => setActiveTable(true)}>Отечественные производители</button>
-                        <button claonClick={() => setActiveTable(false)}>Импортные производители</button>
+                        <button className={`${styles.btnTable} ${activeTable ? '' : styles.active}`}
+                                onClick={() => setActiveTable(true)}>Отечественные
+                            производители
+                        </button>
+                        <button className={`${styles.btnTable} ${activeTable ? styles.active : ''}`}
+                                onClick={() => setActiveTable(false)}>Импортные
+                            производители
+                        </button>
                     </div>
                     <div className={styles.details}>
                         <div className={styles.agree}>
@@ -40,7 +49,7 @@ const Home = () => {
                                         <button className={'btn'} onClick={() => setActive(true)}>Отправить запрос
                                             производителям
                                         </button>
-                                        <button className={'btn'}>Сравнительный анализ производителей</button>
+                                        <button className={'btn'} onClick={() => setActiveAnaliz(true)}>Сравнительный анализ производителей</button>
                                     </>
                                 ) : ' '}
 
@@ -48,13 +57,14 @@ const Home = () => {
                             <div>
                                 <span className={styles.selectName}>Отображать производителей</span>
                                 <select className={styles.select}>
-                                    <option>3</option>
                                     <option>5</option>
-                                    <option>10</option>
-                                    <option>15</option>
+                                    <option>20</option>
+                                    <option>30</option>
+                                    <option>40</option>
                                 </select>
                             </div>
                         </div>
+
                         {activeTable ? (
                             <table className={styles.table}>
                                 <thead>
@@ -63,26 +73,30 @@ const Home = () => {
                                     <th>ОКВЭД</th>
                                     <th>
                                         <div className={styles.tableItems}>
-                                            <span>Производитель</span>
-                                            {linkIMG()}
+                                            <NavLink to='/about'><span className={styles.linlTitle}>Производитель</span>
+                                                {linkIMG()}
+                                            </NavLink>
                                         </div>
                                     </th>
                                     <th>
                                         <div className={styles.tableItems}>
-                                            <span>Производитель</span>
-                                            {linkIMG()}
+                                            <NavLink to='/about'><span className={styles.linlTitle}>Производитель</span>
+                                                {linkIMG()}
+                                            </NavLink>
                                         </div>
                                     </th>
                                     <th>
                                         <div className={styles.tableItems}>
-                                            <span>Производитель</span>
-                                            {linkIMG()}
+                                            <NavLink to='/about'><span className={styles.linlTitle}>Производитель</span>
+                                                {linkIMG()}
+                                            </NavLink>
                                         </div>
                                     </th>
                                     <th>
                                         <div className={styles.tableItems}>
-                                            <span>Производитель</span>
-                                            {linkIMG()}
+                                            <NavLink to='/about'><span className={styles.linlTitle}>Производитель</span>
+                                                {linkIMG()}
+                                            </NavLink>
                                         </div>
                                     </th>
                                 </tr>
@@ -146,26 +160,30 @@ const Home = () => {
                                     <th>ТН ВЭД</th>
                                     <th>
                                         <div className={styles.tableItems}>
-                                            <span>Производитель</span>
-                                            {linkIMG()}
+                                            <NavLink to='/about'><span className={styles.linlTitle}>Производитель</span>
+                                                {linkIMG()}
+                                            </NavLink>
                                         </div>
                                     </th>
                                     <th>
                                         <div className={styles.tableItems}>
-                                            <span>Производитель</span>
-                                            {linkIMG()}
+                                            <NavLink to='/about'><span className={styles.linlTitle}>Производитель</span>
+                                                {linkIMG()}
+                                            </NavLink>
                                         </div>
                                     </th>
                                     <th>
                                         <div className={styles.tableItems}>
-                                            <span>Производитель</span>
-                                            {linkIMG()}
+                                            <NavLink to='/about'><span className={styles.linlTitle}>Производитель</span>
+                                                {linkIMG()}
+                                            </NavLink>
                                         </div>
                                     </th>
                                     <th>
                                         <div className={styles.tableItems}>
-                                            <span>Производитель</span>
-                                            {linkIMG()}
+                                            <NavLink to='/about'><span className={styles.linlTitle}>Производитель</span>
+                                                {linkIMG()}
+                                            </NavLink>
                                         </div>
                                     </th>
                                 </tr>

@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './modalConcat.module.css'
+import styles from './modalAnaliz.module.css'
 
-const ModalContact = ({active, setActive}) => {
+const ModalAnaliz = ({active, setActive}) => {
     return (
         <div className={styles.modal} style={active ? {display: "flex"} : {display: "none"}}>
             <div className={styles.content}>
@@ -15,7 +15,7 @@ const ModalContact = ({active, setActive}) => {
                     </svg>
 
                 </div>
-                <div className={styles.description}>Выберите поставщиков для отправки коммерческих предложений</div>
+                <div className={styles.description}>Выберите производителей для сравнения</div>
                 <div className={styles.action}>
                     <label className={styles.actionChange}>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,13 +50,6 @@ const ModalContact = ({active, setActive}) => {
                         <label><input type="checkbox"/><span className={styles.name}>Поставщик</span></label>
                     </div>
                 </div>
-                <div className={styles.contact}>
-                    <div className={styles.docName}>Форма ценового предложения</div>
-                    <input type="url"/>
-
-                    <div className={`${styles.docName} ${styles.docNameMargin}`}>Ссылка на документацию</div>
-                    <input type="url"/>
-                </div>
                 <div className={styles.submitInfo}>
                     <span>Выбрано 5 поставщиков</span>
                     <button className={styles.btn}>Отправить</button>
@@ -66,4 +59,4 @@ const ModalContact = ({active, setActive}) => {
     );
 };
 
-export default ModalContact;
+export default ModalAnaliz;

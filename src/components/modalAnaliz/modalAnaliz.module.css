@@ -1,0 +1,120 @@
+.modal {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.content {
+    width: 434px;
+    background: #F2F2F2;
+}
+
+.title {
+    background: #1B75C9;
+    color: white;
+    padding: 8px 16px;
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+
+.description {
+    padding: 12px 16px;
+    background: white;
+    line-height: 24px;
+    font-size: 15px;
+}
+
+.action {
+    padding: 12px 16px;
+    display: flex;
+    background: white;
+}
+
+.actionChange {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.actionChange > svg {
+    margin-right: 8px;
+}
+
+.actionChange:last-child {
+    margin-left: 34px;
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+}
+
+.provider {
+    padding: 10px 18px;
+    border-top: 1px solid #d5d5d5;
+    background: #F2F2F2;
+}
+
+.name {
+    margin-left: 10px;
+}
+
+.contact {
+    padding: 20px 24px;
+    background: white;
+}
+
+.contact > input {
+    width: 100%;
+    border: 1px solid #D8DFEF;
+    font-size: 14px;
+    color: #1B75C9;
+    padding: 10px 12px;
+    outline: 0;
+}
+
+.docName {
+    font-weight: 500;
+    font-size: 14px;
+    color: #141414;
+    margin-bottom: 4px;
+}
+
+.docNameMargin {
+    margin-top: 16px;
+}
+
+.submitInfo {
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+.submitInfo > span {
+    color: rgba(27, 117, 201, 1);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.btn {
+    padding: 8px 16px;
+    color: white;
+    font-size: 16px;
+    background: #1B75C9;
+    border: 1px solid transparent;
+}

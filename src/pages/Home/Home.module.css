@@ -52,12 +52,13 @@
     font-weight: normal;
 }
 
-.tableItems {
+.tableItems > a {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
-.tableItems > span {
+.tableItems > a > span {
     margin-right: 12px;
 }
 
@@ -73,5 +74,11 @@
 }
 
 .active {
+    background: #E4E4E4;
+    color: #141414;
+}
 
+.linlTitle {
+    color: #FBFBFB;
+    text-decoration: none;
 }

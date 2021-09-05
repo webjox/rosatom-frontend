@@ -1,0 +1,15 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.crumbs {
+    display: flex;
+    align-items: center;
+    margin: 32px 0;
+}
+
+.crumbsMain > a{
+    color: black;
+    text-decoration: none;
+}

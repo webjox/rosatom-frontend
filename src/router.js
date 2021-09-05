@@ -1,14 +1,17 @@
-import React from 'react';
-import {Route, Switch} from "react-router-dom";
+import React from "react";
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route} from "react-router-dom";
+import About from "./pages/About/About";
 import Home from "./pages/Home/Home";
-import Additional from "./pages/Additional/Additional";
 
-const Router = () => {
+export default function App() {
     return (
         <Router>
             <Switch>
-                <Route path="/users">
-                    <Additional/>
+                <Route path="/about">
+                    <About/>
                 </Route>
                 <Route path="/">
                     <Home/>
@@ -16,6 +19,4 @@ const Router = () => {
             </Switch>
         </Router>
     );
-};
-
-export default Router;
+}
