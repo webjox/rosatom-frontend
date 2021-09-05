@@ -1,18 +1,18 @@
 .search {
-    margin: 48px auto;
+    margin: 0 auto 48px auto;
     background: white;
-    padding: 48px 20px;
+    padding: 48px 0;
 }
 
 .container {
     width: 725px;
-    margin: 0 auto;
+    margin-left: 48px;
 }
 
 .title {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 23px;
 }
 
 .inputControl {
@@ -67,4 +67,26 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.prompt {
+    position: relative;
+    display: none;
+}
+
+.options {
+    position: absolute;
+    width: 510px;
+    background: #f4f9fd;
+    top: -30px;
+    max-height: 350px;
+    box-shadow: 0 0 9px 1px #00000050;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.product {
+    background: #cecbcb54;
+    margin: 3px 0;
+    padding: 10px;
 }

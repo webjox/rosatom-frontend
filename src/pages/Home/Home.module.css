@@ -3,6 +3,16 @@
     margin: 0 auto;
 }
 
+.details {
+    background: white;
+    padding: 40px 48px;
+}
+
+.agree {
+    display: flex;
+    justify-content: space-between;
+}
+
 .btnAgree {
     font-size: 16px;
 }
@@ -11,24 +21,57 @@
     font-size: 16px;
 }
 
-.btnAgree > button:last-child{
-    margin-left: 20px;
+.btnAgree > button:nth-child(2) {
+    margin: 0 20px;
 }
 
-.tableContainer {
-    width: 720px;
-    height: 449px;
+.selectName {
+    font-weight: 500;
+    font-size: 14px;
+    margin-right: 12px;
+}
+
+.select {
+    width: 140px;
+    outline: 0;
+    padding: 10px 12px;
+    font-size: 14px;
 }
 
 .table {
     margin-top: 20px;
-    width: 720px;
+    width: 100%;
     text-align: left;
 }
 
 .tableResult > td {
     font-weight: bold;
 }
+
 .tableResult > td:first-child {
     font-weight: normal;
+}
+
+.tableItems {
+    display: flex;
+    align-items: center;
+}
+
+.tableItems > span {
+    margin-right: 12px;
+}
+
+
+.btnTable {
+    padding: 24px;
+    outline: 0;
+    border: none;
+    background: white;
+    font-size: 16px;
+    color: #1B75C9;
+    font-weight: bold;
+}
+
+.active {
+
 }

@@ -11,7 +11,7 @@
 }
 
 .content {
-    width: 398px;
+    width: 434px;
     background: #F2F2F2;
 }
 
@@ -72,6 +72,31 @@
     margin-left: 10px;
 }
 
+.contact {
+    padding: 20px 24px;
+    background: white;
+}
+
+.contact > input {
+    width: 100%;
+    border: 1px solid #D8DFEF;
+    font-size: 14px;
+    color: #1B75C9;
+    padding: 10px 12px;
+    outline: 0;
+}
+
+.docName {
+    font-weight: 500;
+    font-size: 14px;
+    color: #141414;
+    margin-bottom: 4px;
+}
+
+.docNameMargin {
+    margin-top: 16px;
+}
+
 .submitInfo {
     padding: 12px 16px;
     display: flex;
@@ -81,7 +106,8 @@
 }
 
 .submitInfo > span {
-    color: #D8DFEF;
+    color: rgba(27, 117, 201, 1);
+    font-weight: 600;
     font-size: 14px;
 }
 
