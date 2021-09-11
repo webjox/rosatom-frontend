@@ -35,23 +35,23 @@ const ModalAnaliz = ({active, setActive}) => {
                 </div>
                 <div className={styles.output}>
                     <div className={styles.provider}>
-                        <label><input type="checkbox"/><span className={styles.name}>Поставщик</span></label>
+                        <label><input type="checkbox"/><span className={styles.name}>Производитель</span></label>
                     </div>
                     <div className={styles.provider}>
-                        <label><input type="checkbox"/><span className={styles.name}>Поставщик</span></label>
+                        <label><input type="checkbox"/><span className={styles.name}>Производитель</span></label>
                     </div>
                     <div className={styles.provider}>
-                        <label><input type="checkbox"/><span className={styles.name}>Поставщик</span></label>
+                        <label><input type="checkbox"/><span className={styles.name}>Производитель</span></label>
                     </div>
                     <div className={styles.provider}>
-                        <label><input type="checkbox"/><span className={styles.name}>Поставщик</span></label>
+                        <label><input type="checkbox"/><span className={styles.name}>Производитель</span></label>
                     </div>
                     <div className={styles.provider}>
-                        <label><input type="checkbox"/><span className={styles.name}>Поставщик</span></label>
+                        <label><input type="checkbox"/><span className={styles.name}>Производитель</span></label>
                     </div>
                 </div>
                 <div className={styles.submitInfo}>
-                    <span>Выбрано 5 поставщиков</span>
+                    <span>Выбрано 5 Производительов</span>
                     <button className={styles.btn}>Отправить</button>
                 </div>
             </div>

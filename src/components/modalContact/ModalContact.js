@@ -15,7 +15,7 @@ const ModalContact = ({active, setActive}) => {
                     </svg>
 
                 </div>
-                <div className={styles.description}>Выберите поставщиков для отправки коммерческих предложений</div>
+                <div className={styles.description}>Выберите производителей для отправки коммерческих предложений</div>
                 <div className={styles.action}>
                     <label className={styles.actionChange}>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,19 +35,19 @@ const ModalContact = ({active, setActive}) => {
                 </div>
                 <div className={styles.output}>
                     <div className={styles.provider}>
-                        <label><input type="checkbox"/><span className={styles.name}>Поставщик</span></label>
+                        <label><input type="checkbox"/><span className={styles.name}>Производитель</span></label>
                     </div>
                     <div className={styles.provider}>
-                        <label><input type="checkbox"/><span className={styles.name}>Поставщик</span></label>
+                        <label><input type="checkbox"/><span className={styles.name}>Производитель</span></label>
                     </div>
                     <div className={styles.provider}>
-                        <label><input type="checkbox"/><span className={styles.name}>Поставщик</span></label>
+                        <label><input type="checkbox"/><span className={styles.name}>Производитель</span></label>
                     </div>
                     <div className={styles.provider}>
-                        <label><input type="checkbox"/><span className={styles.name}>Поставщик</span></label>
+                        <label><input type="checkbox"/><span className={styles.name}>Производитель</span></label>
                     </div>
                     <div className={styles.provider}>
-                        <label><input type="checkbox"/><span className={styles.name}>Поставщик</span></label>
+                        <label><input type="checkbox"/><span className={styles.name}>Производитель</span></label>
                     </div>
                 </div>
                 <div className={styles.contact}>
@@ -58,7 +58,7 @@ const ModalContact = ({active, setActive}) => {
                     <input type="url"/>
                 </div>
                 <div className={styles.submitInfo}>
-                    <span>Выбрано 5 поставщиков</span>
+                    <span>Выбрано 5 Производительов</span>
                     <button className={styles.btn}>Отправить</button>
                 </div>
             </div>

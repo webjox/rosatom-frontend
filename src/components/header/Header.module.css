@@ -1,14 +1,17 @@
 .header {
     display: flex;
     justify-content: space-between;
-    max-width: 1440px;
-    margin: 0 auto;
     padding: 36px 0;
 }
 
 .text {
     font-size: 32px;
+    font-weight: bold;
     line-height: 68px;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to bottom, rgba(0, 147, 208, 1), rgba(0, 37, 115, 1));
+    font-family: 'Inter-Bold', sans-serif;
 }
 
 .logoContainer {

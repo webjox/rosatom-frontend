@@ -28,13 +28,18 @@ const About = () => {
 
     return (
         <div className={styles.container}>
-            <Header text={'Ловушка предложений'}/>
+            <Header title={'Акционерное общество "Уральская Сталь'}/>
+
             <div className={styles.crumbs}>
-                <span className={styles.crumbsMain}><NavLink to='/'>Главная</NavLink></span> <span style={{margin: "0 22px"}}><svg width="4" height="8"
-                                                                                        viewBox="0 0 4 8" fill="none"
-                                                                                        xmlns="http://www.w3.org/2000/svg">
-<path d="M4 4L0 0V8L4 4Z" fill="#92A0C6"/></svg>
-</span>Акционерное общество "Уральскя Сталь"
+                <span className={styles.crumbsMain}>
+                    <NavLink to='/'>Главная</NavLink>
+                </span>
+                <span style={{margin: "0 22px"}}>
+                    <svg width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4L0 0V8L4 4Z" fill="#92A0C6"/>
+                    </svg>
+                </span>
+                <span>Акционерное общество "Уральская Сталь</span>
             </div>
             <div className={classes.root}>
                 <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>

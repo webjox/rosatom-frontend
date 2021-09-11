@@ -3,6 +3,11 @@
     src: url("./fonts/Inter-Regular.ttf");
 }
 
+@font-face {
+    font-family: 'Inter-Bold', sans-serif;
+    src: url("./fonts/Inter-Bold.ttf");
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -43,4 +48,9 @@ th {
 a {
     text-decoration-line: underline;
     color: #1B75C9;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
 }

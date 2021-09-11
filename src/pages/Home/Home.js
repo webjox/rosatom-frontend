@@ -49,7 +49,9 @@ const Home = () => {
                                         <button className={'btn'} onClick={() => setActive(true)}>Отправить запрос
                                             производителям
                                         </button>
-                                        <button className={'btn'} onClick={() => setActiveAnaliz(true)}>Сравнительный анализ производителей</button>
+                                        <button className={'btn'} onClick={() => setActiveAnaliz(true)}>Сравнительный
+                                            анализ производителей
+                                        </button>
                                     </>
                                 ) : ' '}
 
@@ -111,7 +113,7 @@ const Home = () => {
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td><a href="#">Товар 1</a></td>
+                                    <td><NavLink to='/product'>Товар 1</NavLink></td>
                                     <td>07.10.2</td>
                                     <td><label><input type="checkbox" checked/></label></td>
                                     <td><label><input type="checkbox" checked/></label></td>

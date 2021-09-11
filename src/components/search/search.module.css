@@ -89,4 +89,11 @@
     background: #cecbcb54;
     margin: 3px 0;
     padding: 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.product:hover {
+    opacity: 0.8;
+    border: 1px solid #1B75C9;
 }

@@ -1,9 +1,12 @@
 import RouterRender from "./router";
+import './global.css'
 
 function App() {
     return (
         <div>
-            <RouterRender/>
+            <div className="container">
+                <RouterRender/>
+            </div>
         </div>
     );
 }
